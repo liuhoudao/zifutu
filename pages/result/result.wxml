@@ -1,0 +1,28 @@
+<!--logs.wxml-->
+<view class="container">
+
+    <canvas canvas-id="men_canvas" class="men_canvas" style="height:{{canvas_height}}px"></canvas>
+
+    <view class="btn">
+        <block wx:if="{{back_to_index != 1}}">
+            <button  wx:if="{{is_fx == 1}}" open-type="share" class="img_btn">
+                <image src="/imgs/wechat3.png"></image>
+            </button>
+            <button bindtap="save_pic" class="img_btn">
+                <image src="/imgs/save.png"></image>
+            </button>
+        </block>
+        <block wx:else>
+            <button bindtap="back_to_index" class="make_new"> 创作自己的传话小人 </button>
+        </block>
+    </view>
+
+    <view class="bgcolor_selector" hidden="{{hide_bgcolor_selector}}">
+        <div bindtap="change_bgcolor" data-bgcolor="{{bgcolor0}}" style="background-color:{{bgcolor0}};"></div>
+        <div bindtap="change_bgcolor" data-bgcolor="{{bgcolor1}}" style="background-color:{{bgcolor1}};"></div>
+        <div bindtap="change_bgcolor" data-bgcolor="{{bgcolor2}}" style="background-color:{{bgcolor2}};"></div>
+        <div bindtap="change_bgcolor" data-bgcolor="{{bgcolor3}}" style="background-color:{{bgcolor3}};"></div>
+        <div bindtap="change_bgcolor" data-bgcolor="{{bgcolor4}}" style="background-color:{{bgcolor4}};"></div>
+    </view>
+
+</view>

@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="icon_frame">
+<view class='wtfk'>如有想要添加的模板或有其他问题想法以及不足之处请联系我，联系方式请点击我的问题反馈。</view>
+    <!-- <image class="icon" src="../../imgs/icon.jpg" background-size="cover"></image> -->
+</view>
+
+<view class="input_text">
+ <view class='sss'>
+        <view class="aaa">
+          <view style="background:{{intro.maincolor}}"></view>
+          <view>拼图列表</view>
+        </view>
+        <block wx:if="{{list}}" >
+          <view class="newslist" wx:for="{{list}}" wx:key="index">
+            <view bindtap="toimgDetail" class="pic" data-id="{{item.id}}">
+              <image src="{{item.image}}"></image>
+            </view>
+            <view bindtap="toimgDetail" class="title" data-id="{{item.id}}">
+              <view class="address">
+                <view>{{item.name}}</view>
+              </view>
+              <!-- <view class="price">
+                <view class="money">20</view>
+              </view> -->
+            </view>
+          </view>
+        </block>
+      </view>
+</view>

@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<!-- <view class="icon_frame"> -->
+    <image class='image' src="{{img}}"></image>
+<!-- </view> -->
+
+<view class="input_text">
+<button bindtap='uploadPhoto'>选择图片</button>
+<view class='ts_text'>温馨提示:选择大图生成可能会由于图片绘制过大部分手机导致数据传输失败敬请谅解</view>
+</view>
+<view class="zf">
+<view class="zf_gg zf_sx">
+<div bindtap="change_sx" data-sx="false" style="{{sx=='false'?'background-color:#FFFF00;':'background-color:#dbdbdb'}}">随机</div>
+        <div bindtap="change_sx" data-sx="true" style="{{sx=='true'?'background-color:#FFFF00;':'background-color:#dbdbdb'}}">顺序</div>
+</view>
+<view class="zf_gg zf_bj">
+<div bindtap="change_bg" data-bg="true" style="{{bg=='true'?'background-color:#FFFF00;':'background-color:#dbdbdb'}}">默认</div>
+        <div bindtap="change_bg" data-bg="false" style="{{bg=='false'?'background-color:#FFFF00;':'background-color:#dbdbdb'}}">透明</div>
+</view>
+<view class="zf_gg zf_bj">
+<div bindtap="change_img_w" data-img_w='400' style="{{img_w=='400'?'background-color:#FFFF00;':'background-color:#dbdbdb'}}">小图</div>
+        <div bindtap="change_img_w" data-img_w='1000' style="{{img_w=='1000'?'background-color:#FFFF00;':'background-color:#dbdbdb'}}">大图</div>
+</view>
+</view>
+<view class="bgcolor_selector">
+<div bindtap="change_size" data-size="22" style="{{size==22?'background-color:#FFFF00;':'background-color:#dbdbdb'}}">超大</div>
+        <div bindtap="change_size" data-size="18" style="{{size==18?'background-color:#FFFF00;':'background-color:#dbdbdb'}}">大</div>
+        <div bindtap="change_size" data-size="14" style="{{size==14?'background-color:#FFFF00;':'background-color:#dbdbdb'}}">较大</div>
+        <div bindtap="change_size" data-size="10" style="{{size==10?'background-color:#FFFF00;':'background-color:#dbdbdb'}}">中等</div>
+        <div bindtap="change_size" data-size="8" style="{{size==8?'background-color:#FFFF00;':'background-color:#dbdbdb'}}">小</div>
+        <div bindtap="change_size" data-size="3" style="{{size==3?'background-color:#FFFF00;':'background-color:#dbdbdb'}}">极小</div>
+    </view>
+<view class="get_img">
+    <button bindtap="get_img"> 生成字符图 </button>
+</view>

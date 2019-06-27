@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<form bindsubmit="formSubmit">
+<view class="icon_frame">
+    <image class="icon" src="../../imgs/icon.jpg" background-size="cover"></image>
+</view>
+
+<view class="input_text">
+    <input name="name" placeholder="姓名" />
+    <input name="contact" placeholder="联系方式"  />
+    <textarea name="details" placeholder="(必填)详细内容"  />
+</view>
+
+<view class="gen_picture">
+    <button formType="submit">提交</button>
+</view>
+</form>

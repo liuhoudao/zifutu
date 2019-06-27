@@ -1,0 +1,4 @@
+<!--pages/index/zfhxq.wxml-->
+<image mode="widthFix" src='{{date}}'></image>
+    <button wx:if="{{bc}}" bindtap="save"> 保存图片 </button>
+    <button wx:else open-type="openSetting" bindtap="openSetting">去授权</button>
